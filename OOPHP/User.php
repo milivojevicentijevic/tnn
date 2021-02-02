@@ -2,7 +2,8 @@
 class User 
 {
     private $username;
-    private $email;
+    protected $email;
+    public $role = "member";
     
     public function __construct($username, $email) {
         $this->username = $username;
@@ -10,6 +11,9 @@ class User
     }
     public function addFriend() {
         return "$this->username added a new friend";
+    }
+    public function message() {
+        return "$this->email sent a new message";
     }
     //getters
     public function getEmail() {

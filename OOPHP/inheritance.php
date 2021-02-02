@@ -12,9 +12,8 @@
         $user2 = new User('mitar', 'mitar@yahoo.com');
         $user3 = new AdminUser('dejan', 'dejan@yahoo.com', 5);
         
-        echo $user1->getEmail()."<br>";
-        echo $user3->getEmail()."<br>";
-        echo $user3->getLevel()."<br>";
+        echo $user1->message()."<br>";
+        echo $user3->message()."<br>";
     ?>
 </body>
 </html>
@@ -24,7 +23,6 @@
 
 
 <!-- 
-jovan@yahoo.com
-dejan@yahoo.com
-5 
+jovan@yahoo.com sent a new message
+dejan@yahoo.com, an admin, sent a new message
 -->
