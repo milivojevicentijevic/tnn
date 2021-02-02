@@ -10,8 +10,10 @@
         $user1 = new User('jovan', 'jovan@yahoo.com');
         $user2 = new User('mitar', 'mitar@yahoo.com');
 
-        echo $user1->addFriend()."<br>";
-        echo $user2->addFriend()."<br>";
+        $user1->setEmail('jovan567@yahoo.com');
+        
+        echo $user1->getEmail()."<br>";
+        echo $user2->getEmail()."<br>";
     ?>
 </body>
 </html>
@@ -22,6 +24,6 @@
 
 
 <!-- 
-jovan added a new friend
-mitar added a new friend
+jovan567@yahoo.com
+mitar@yahoo.com
 -->
