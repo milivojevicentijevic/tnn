@@ -9,8 +9,14 @@ class User
         $this->username = $username;
         $this->email = $email;
     }
+    public function __destruct() {
+        echo "the user $this->username was removed<br>";
+    }
+    public function __clone() {
+        $this->username = $this->username.'(cloned)';
+    }
     public function addFriend() {
-        return "$this->username added a new friend";
+        return "$this->username added a new friend<br>";
     }
     public function message() {
         return "$this->email sent a new message";

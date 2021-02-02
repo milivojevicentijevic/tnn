@@ -12,8 +12,9 @@
         $user2 = new User('mitar', 'mitar@yahoo.com');
         $user3 = new AdminUser('dejan', 'dejan@yahoo.com', 5);
         
-        echo $user1->message()."<br>";
-        echo $user3->message()."<br>";
+        //unset($user1);
+        $user4 = clone $user1;
+        echo $user4->addFriend();
     ?>
 </body>
 </html>
@@ -23,6 +24,9 @@
 
 
 <!-- 
-jovan@yahoo.com sent a new message
-dejan@yahoo.com, an admin, sent a new message
+jovan(cloned) added a new friend
+the user jovan(cloned) was removed
+the user dejan was removed
+the user mitar was removed
+the user jovan was removed
 -->
