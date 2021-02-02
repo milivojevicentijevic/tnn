@@ -1,8 +1,8 @@
 <?php
 class User 
 {
-    public $username;
-    public $email;
+    private $username;
+    private $email;
     
     public function __construct($username, $email) {
         $this->username = $username;
